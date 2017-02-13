@@ -61,6 +61,17 @@ class TestSubject < MiniTest::Test
         
    end
 
+   def test_other_method
+     # Normal
+     # case 1
+     # case 1
+     # Error
+     # case 1
+     # case 1
+     # Boundry
+     # case 1  
+   end
+
    def addSomeTopics
       @subject.addTopic @topic1
       @subject.addTopic @topic2
