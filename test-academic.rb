@@ -56,9 +56,13 @@ class TestSubject < MiniTest::Test
    def test_merge_topics
         addSomeTopics
        #Normal
-        result = @subject.mergeTopics("topic 1", "topic 2", "topic 3")
-        assert result
-        assert_equal true, result
+       #I can't figure out the syntax but i get the idea of what is going on. I am trying to add the two topics and add the name.
+         result = @subject.findTopic @topic1
+         result = @subject.findTopic @topic2
+         result = ('new topic')
+         assert result
+         assert_equal true, result
+       #Error
         
    end
 
