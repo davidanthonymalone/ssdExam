@@ -55,9 +55,8 @@ class TestSubject < MiniTest::Test
 
    def test_merge_topics
         addSomeTopics
-        result = @topic.mergeTopics(@topic1)
-        result = @topic.mergeTopics(@topic2)
-        result = @topic.mergeTopics("topic 3")
+       #Normal
+        result = @subject.mergeTopics("topic 1", "topic 2", "topic 3")
         assert result
         assert_equal true, result
         
